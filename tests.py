@@ -4,6 +4,7 @@ Algorithm Analysis (2019G3009)
 Student: Saifuddin Sayyaf (ID: 2422190016)
 """
 
+from typing import Any
 import unittest
 from insertion_sort import insertion_sort
 from selection_sort import selection_sort
@@ -15,16 +16,18 @@ class ElementWithId:
         self.key = key
         self.original_id = original_id
         
-    def __lt__(self, other):
+    def __lt__(self, other: Any) -> bool:
         return self.key < other.key
         
-    def __gt__(self, other):
+    def __gt__(self, other: Any) -> bool:
         return self.key > other.key
         
-    def __eq__(self, other):
+    def __eq__(self, other: Any) -> bool:
+        if not isinstance(other, ElementWithId):
+            return False
         return self.key == other.key
         
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"({self.key}, #{self.original_id})"
 
 

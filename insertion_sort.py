@@ -7,7 +7,7 @@ Faculty of Engineering and Architecture / Software Engineering
 İstanbul Esenyurt University
 """
 
-from typing import List, Any
+from typing import List, Any, Tuple
 
 
 def insertion_sort(arr: List[Any]) -> List[Any]:
@@ -49,7 +49,7 @@ def insertion_sort(arr: List[Any]) -> List[Any]:
     return arr
 
 
-def insertion_sort_instrumented(arr: List[Any]):
+def insertion_sort_instrumented(arr: List[Any]) -> Tuple[List[Any], int, int]:
     """
     Instrumented version that tracks comparisons, shifts, and memory reads/writes.
     Useful for detailed algorithmic evaluation and verification.

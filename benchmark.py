@@ -13,7 +13,7 @@ Across Best, Average, and Worst Case scenarios for multiple input sizes.
 import time
 import random
 import tracemalloc
-from typing import List, Callable, Tuple
+from typing import List, Callable, Tuple, Dict, Any
 from insertion_sort import insertion_sort, insertion_sort_instrumented
 from selection_sort import selection_sort, selection_sort_instrumented
 
@@ -56,7 +56,7 @@ def measure_performance(sort_fn: Callable[[List[int]], List[int]], data: List[in
     return time_ms, mem_kib
 
 
-def run_full_benchmark():
+def run_full_benchmark() -> List[Dict[str, Any]]:
     sizes = [100, 500, 1000, 2000, 5000]
     cases = ["Best", "Average", "Worst"]
     

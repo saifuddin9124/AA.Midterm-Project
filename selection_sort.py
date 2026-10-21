@@ -7,7 +7,7 @@ Faculty of Engineering and Architecture / Software Engineering
 İstanbul Esenyurt University
 """
 
-from typing import List, Any
+from typing import List, Any, Tuple
 
 
 def selection_sort(arr: List[Any]) -> List[Any]:
@@ -48,7 +48,7 @@ def selection_sort(arr: List[Any]) -> List[Any]:
     return arr
 
 
-def selection_sort_instrumented(arr: List[Any]):
+def selection_sort_instrumented(arr: List[Any]) -> Tuple[List[Any], int, int]:
     """
     Instrumented version that tracks comparisons and swaps.
     Useful for detailed algorithmic evaluation and verification.
