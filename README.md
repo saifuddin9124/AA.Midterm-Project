@@ -294,8 +294,7 @@ algorithm SelectionSort(A):
 ├── insertion_sort.py       # Standalone implementation with docstrings & metrics
 ├── selection_sort.py       # Standalone implementation with docstrings & metrics
 ├── benchmark.py            # Automated CPU & memory profiling suite
-├── tests.py                # Correctness, edge cases & stability test suite
-└── PRESENTATION_NOTES.md   # Oral exam preparation & defense guide
+└── tests.py                # Correctness, edge cases & stability test suite
 ```
 
 ### How to Run the Code

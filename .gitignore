@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+PRESENTATION_NOTES.md
+.DS_Store
